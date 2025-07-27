@@ -1,7 +1,7 @@
 # Monthly Budget Calculator Program
 # Author: [Wisit Malaob]
 # Date: [27/7/2025]
-# Purpose: To calculate and report user's monthly income and expenses
+# Purpose: Calculate monthly get and saving
 
 # ===== 1. Get user input =====
 monthly_income = float(input("Monthly income (THB): "))
