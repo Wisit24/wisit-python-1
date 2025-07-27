@@ -41,7 +41,7 @@ print("Variable Expenses: {:.2f} THB".format(variable_expenses))
 print("Total Expenses: {:.2f} THB".format(total_expenses))
 print("Remaining: {:.2f} THB".format(remaining_income))
 
-print("\n=== SAVINGS SUMMARY ===")
+print("\n=== SAVINGS BREAKDOWN ===")
 print("Emergency Fund ({:.1f}%): {:.2f} THB".format(emergency_fund_percent, emergency_fund))
 print("Investment ({:.1f}%): {:.2f} THB".format(investment_percent, investment_amount))
 print("Available for Savings: {:.2f} THB".format(available_for_savings))
