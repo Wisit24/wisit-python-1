@@ -1,5 +1,5 @@
 # Monthly Budget Calculator Program
-# Author: [Wisit Malaob]
+# Author: [Wisit Malaob 6730202432 sec831]
 # Date: [27/7/2025]
 # Purpose: Calculate monthly get and saving
 
