@@ -33,10 +33,10 @@ print()
 # =============================================================================
 print("\n=== PART 2: FUNCTIONS WITH PARAMETERS ===")
 
-# Example 1: Function with one parameter
-def greet_person(name):
+# Example 1: Function with one parameter   รับ 3 ตัวเท่านั้น ส่งเกินเด้งส่งน้อยเด้ง
+def greet_person(name): #รับ 1 ตัว แล้วจบ
     """Greets a person by name"""
-    print(f"Hello, {name}! Nice to meet you.")
+    print(f"Hello, {name}! Nice to meet you.")#อยากใช้ให้ส่งชื่อมา 1 ถึงจะใช้ได้
 
 print("Calling greet_person with different names:")
 greet_person("Alice")
@@ -45,7 +45,7 @@ greet_person("Charlie")
 print()
 
 # Example 2: Function with multiple parameters
-def introduce_person(name, age, city):
+def introduce_person(name, age, city): #รับมากกว่า1ตัว
     """Introduces a person with their details"""
     print(f"Hi! My name is {name}.")
     print(f"I am {age} years old.")
@@ -74,10 +74,10 @@ calculate_rectangle_area(10, 7)
 print("\n=== PART 3: FUNCTIONS WITH RETURN VALUES ===")
 
 # Example 1: Function that returns a value
-def add_numbers(a, b):
+def add_numbers(a, b):   #รับค่า ต้องส่งข้อมูลมา 2 ตัว เท่านั้น!!!!!
     """Adds two numbers and returns the result"""
     result = a + b
-    return result
+    return result   #ส่งค่ากลับ เพราะมี return
 
 print("Using functions that return values:")
 sum1 = add_numbers(5, 3)
@@ -87,7 +87,7 @@ print(f"10 + 7 = {sum2}")
 print(f"Sum of both results: {sum1 + sum2}")
 print()
 
-# Example 2: Function returning multiple values
+# Example 2: Function returning multiple values  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 def get_circle_info(radius):
     """Calculates circle area and circumference"""
     pi = 3.14159
@@ -101,7 +101,7 @@ area, circumference = get_circle_info(radius)
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
-print()
+print()                                      #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # Example 3: Using returned values in expressions
 def multiply(x, y):
@@ -122,8 +122,8 @@ print()
 # =============================================================================
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
-# Example 1: Function with default parameter
-def greet_with_title(name, title="Mr./Ms."):
+# Example 1: Function with default parameter  
+def greet_with_title(name, title="Mr./Ms."): #ส่งอย่างน้อย1ตัวไม่เกิน3
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 
@@ -134,7 +134,7 @@ greet_with_title("Brown", "Prof.")  # Custom title
 print()
 
 # Example 2: Multiple default parameters
-def create_profile(name, age=18, country="Unknown"):
+def create_profile(name, age=18, country="Unknown"): #ส่งหรือไม่ส่งก็ได้
     """Creates a user profile with default values"""
     print(f"Profile: {name}, Age: {age}, Country: {country}")
 
@@ -161,7 +161,7 @@ print()
 print("\n=== PART 5: VARIABLE SCOPE ===")
 
 # Global variables
-global_message = "I'm a global variable"
+global_message = "I'm a global variable"   #164-187 พยามเข้าถึงตัวแปร 
 counter = 0
 
 def demonstrate_scope():
@@ -173,7 +173,7 @@ def demonstrate_scope():
     print(f"Inside function - Global: {global_message}")
     print(f"Inside function - Local: {local_message}")
     
-    # Modifying global variable (need global keyword)
+    # Modifying global variable (need global keyword)  176-179 พยามเข้าถึง counter 
     global counter
     counter += 1
     print(f"Counter inside function: {counter}")
@@ -218,7 +218,7 @@ def is_strong_password(password):
     if len(password) < 8:
         return False, "Password too short (minimum 8 characters)"
     
-    has_letter = any(c.isalpha() for c in password)
+    has_letter = any(c.isalpha() for c in password)  #กลับไปอ่าน !!!!!!!!!!!!!
     has_number = any(c.isdigit() for c in password)
     
     if not has_letter:
@@ -302,7 +302,7 @@ print("\n=== PART 7: ADVANCED EXAMPLES ===")
 def analyze_text(text):
     """Analyzes text and returns statistics"""
     words = len(text.split())
-    chars_with_spaces = len(text)
+    chars_with_spaces = len(text) #ถามจำนวนอักขระ
     chars_without_spaces = len(text.replace(" ", ""))
     sentences = text.count('.') + text.count('!') + text.count('?')
     
@@ -350,7 +350,7 @@ for key, value in stats.items():
 print()
 
 # Example 3: Fibonacci sequence
-def fibonacci(n):
+def fibonacci(n):   #เลข fibonacci คือเอาเลข 2 ตัวหน้ามารวมกัน เช่น 1 1 2 3 5 8 13 
     """Returns the nth Fibonacci number"""
     if n <= 0:
         return 0
