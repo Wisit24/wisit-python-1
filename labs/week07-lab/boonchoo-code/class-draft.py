@@ -1,6 +1,7 @@
 class ClassName:
     """Class docstring"""
     
+    #constructor method
     def __init__(self, parameters):
         # Constructor method
         self.attribute = value
@@ -10,6 +11,6 @@ class ClassName:
         return something
 
 
-myObj = ClassName(parameters)
+myObj = ClassName(parameters)   #14-16 คือการนำมาใช้ 
 print(myObj.attribute)
 resultFromMethod = myObj.method_name()
